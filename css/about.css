@@ -186,7 +186,7 @@ nav ul li a {
     cursor: pointer;
     color: #f7f6f0;
     display: none;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .intro-section {
@@ -679,7 +679,6 @@ nav ul li a {
         width: 220px;
     }
       
-    
     nav ul {
         max-height: 0px;
         background: #000101;
@@ -691,14 +690,14 @@ nav ul li a {
     }
     
     .showing {
-        max-height: 20em;
+        max-height: 30em;
     }
     
     nav ul li {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: 100%;
-        padding: 15px 0px;
+        padding: 20px 0px;
         text-align: center;
     }
 
@@ -728,7 +727,6 @@ nav ul li a {
 
     .intro-section {
         width: 55%;
-       
     }
 
     .intro-section .intro-content h1 {
@@ -827,7 +825,7 @@ nav ul li a {
     }
     
     .scrollAnim{
-        padding: 0 40px;
+        padding: 25px 40px;
     }
 
     .scrollAnim img{
@@ -837,7 +835,6 @@ nav ul li a {
 
 @media (max-width:480px){ /* smartphones, Android phones, landscape iPhone */
     .logo{
-        padding-top: 2px;
         padding-left: 25px;
     }
 
@@ -845,15 +842,12 @@ nav ul li a {
         width: 200px;
     }
 
-    .menu-icon {
-        padding: 8px 12px;
-        font-size: 22px;
+    .menu-icon{
+        padding-right: 12px;
     }
 
-   
     .intro-section .intro-content h1 {
         font-size: 35px;
-        
     }
     
     .content{
@@ -893,18 +887,9 @@ nav ul li a {
                 
 
 @media (max-width:355px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    .logo{
-        padding-top: 0px;
-    }
-
     .logo img{
-        width: 160px;
+        width: 180px;
     }
-
-    .menu-icon {
-        padding: 6px 10px;
-        font-size: 22px;
-    } 
 
     .intro-section .intro-content h1 {
         font-size: 32px;

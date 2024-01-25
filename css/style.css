@@ -289,7 +289,7 @@ nav ul li a {
     cursor: pointer;
     color: #f7f6f0;
     display: none;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .intro-section {
@@ -1031,7 +1031,6 @@ strong{
         width: 220px;
     }
       
-    
     nav ul {
         max-height: 0px;
         background: #000101;
@@ -1043,14 +1042,14 @@ strong{
     }
     
     .showing {
-        max-height: 20em;
+        max-height: 30em;
     }
     
     nav ul li {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         width: 100%;
-        padding: 15px 0px;
+        padding: 20px 0px;
         text-align: center;
     }
 
@@ -1095,8 +1094,8 @@ strong{
         background-color: #FF5252;
         color: #FFFFFF;
         font-weight: 500;
-        padding: 10px 60px;
-        font-size: 16px;
+        /* padding: 10px 60px;
+        font-size: 16px; */
     }
 
     #section-1 .content p{
@@ -1119,7 +1118,6 @@ strong{
         width: 280px;
         padding-bottom: 0;
     }
-
 
     #particles-js {
         height:95% ;
@@ -1169,13 +1167,13 @@ strong{
         font-size: 11px;
     }
  
-    .cmn-btn {
+    /* .cmn-btn {
         padding: 10px 50px;
         font-size: 15px;
-    }
+    } */
 
     .scrollAnim{
-        padding: 0 70px;
+        padding: 25px 70px;
     }
 
     .content h1{
@@ -1236,12 +1234,12 @@ strong{
         padding: 0 2em;
     }
  
-    .cmn-btn {
+    /* .cmn-btn {
         padding: 10px 40px;
-    }
+    } */
 
     .scrollAnim{
-        padding: 0 40px;
+        padding: 25px 40px;
     }
 
     .scrollAnim img{
@@ -1276,7 +1274,7 @@ strong{
 
 @media (max-width:480px){ /* smartphones, Android phones, landscape iPhone */
     .logo{
-        padding-top: 2px;
+        /* padding-top: 2px; */
         padding-left: 25px;
     }
 
@@ -1284,10 +1282,14 @@ strong{
         width: 200px;
     }
 
-    .menu-icon {
-        padding: 8px 12px;
-        font-size: 22px;
+    .menu-icon{
+        padding-right: 12px;
     }
+
+    /* .menu-icon {
+        padding: 8px 12px;
+        font-size: 25px;
+    } */
 
     .intro-section .intro-content h1 {
         font-size: 26px;
@@ -1300,7 +1302,7 @@ strong{
     }
  
     .cmn-btn {
-        font-size: 14px;
+        padding: 10px 60px;
     }
 
     .scrollAnim img{
@@ -1347,19 +1349,17 @@ strong{
                   
 
 @media (max-width:355px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    .logo{
+    /* .logo{
         padding-top: 0px;
-    }
+    } */
 
     .logo img{
-        width: 160px;
+        width: 180px;
     }
 
-    .menu-icon {
-        padding: 6px 10px;
-        font-size: 22px;
-    } 
-
+    /* .menu-icon {
+       padding-right: 10px;
+    }  */
 
     .intro-section .intro-content h1 {
         font-size: 24px;
