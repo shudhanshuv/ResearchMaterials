@@ -49,7 +49,9 @@ video{
         height: 100vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.302);
-        border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0),#000);
+        -o-border-image: fill 0 -o-linear-gradient(rgba(0, 0, 0, 0),#000);
+           border-image: fill 0 -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0)),to(#000));
+           border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0),#000);
 }
 
 nav {
@@ -150,12 +152,16 @@ nav ul li a {
 
 .nav-hover:hover:before{
 	width:50%;
-	transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	    -ms-transform:translateX(100%);
+	        transform:translateX(100%);
 }
 
 .nav-hover:hover:after{
 	width:50%;
-	transform:translateX(-100%);
+	-webkit-transform:translateX(-100%);
+	    -ms-transform:translateX(-100%);
+	        transform:translateX(-100%);
 }
 
 .nav-hover:hover, .active:hover{
@@ -353,6 +359,7 @@ nav ul li a {
     
     &:before {
       -webkit-transition:0.5s all ease;
+      -o-transition:0.5s all ease;
       transition:0.5s all ease;
       position:absolute;
       top:0;
@@ -369,6 +376,7 @@ nav ul li a {
         color: #000101;
       &:before {
         -webkit-transition:0.5s all ease;
+        -o-transition:0.5s all ease;
         transition:0.5s all ease;
         left:0;
         right:0;
@@ -385,10 +393,19 @@ nav ul li a {
     height: 500px;
     position: relative;
     /* padding: 10px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #wrapper p{

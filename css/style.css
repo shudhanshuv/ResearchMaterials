@@ -10,6 +10,7 @@ html, body{
     scroll-behavior: smooth;
     /* overflow-x: hidden; */
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .overlay {
@@ -27,8 +28,12 @@ html, body{
 			width: 50%;
 			height: 100%;
 			background: #060606;
+			-webkit-transition: .5s cubic-bezier(.77,0,.18,1);
+			-o-transition: .5s cubic-bezier(.77,0,.18,1);
 			transition: .5s cubic-bezier(.77,0,.18,1);
-			transition-delay: .8s;
+			-webkit-transition-delay: .8s;
+			     -o-transition-delay: .8s;
+			        transition-delay: .8s;
 		}
 		&:before {
 			left: 0;
@@ -55,10 +60,21 @@ html, body{
 		position: relative;
 		width: 100%;
 		height: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		-webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+		-webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+		-webkit-transition: .5s cubic-bezier(.77,0,.18,1);
+		-o-transition: .5s cubic-bezier(.77,0,.18,1);
 		transition: .5s cubic-bezier(.77,0,.18,1);
 		
 	}
@@ -74,6 +90,8 @@ html, body{
     font-size: 28px;
     font-family: 'Nunito';
     font-weight: 700;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
     
 }
@@ -85,10 +103,17 @@ html, body{
 	border-bottom: 3px solid transparent;
 	border-radius: 50%;
 	position: relative;
-	animation: spin 1s linear infinite;
+	-webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .inner {
@@ -100,20 +125,44 @@ html, body{
     animation: spinInner 1s linear infinite ;
     -webkit-animation: spinInner 1s linear infinite;
 }
-@keyframes spin {
+@-webkit-keyframes spin {
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 	}
 	100% {
-		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spinInner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-720deg);
+		        transform: rotate(-720deg);
 	}
 }
 @keyframes spinInner {
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 	}
 	100% {
-		transform: rotate(-720deg);
+		-webkit-transform: rotate(-720deg);
+		        transform: rotate(-720deg);
 	}
 }
 
@@ -142,7 +191,9 @@ video{
         height: 100vh;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.181);
-        border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0),#000);
+        -o-border-image: fill 0 -o-linear-gradient(rgba(0, 0, 0, 0),#000);
+           border-image: fill 0 -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0)),to(#000));
+           border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0),#000);
     }
 
 nav {
@@ -240,12 +291,16 @@ nav ul li a {
 
 .nav-hover:hover:before{
 	width:50%;
-	transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	    -ms-transform:translateX(100%);
+	        transform:translateX(100%);
 }
 
 .nav-hover:hover:after{
 	width:50%;
-	transform:translateX(-100%);
+	-webkit-transform:translateX(-100%);
+	    -ms-transform:translateX(-100%);
+	        transform:translateX(-100%);
 }
 
 .nav-hover:hover, .active:hover{
