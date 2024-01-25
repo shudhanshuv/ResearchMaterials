@@ -995,7 +995,7 @@ nav ul li a {
         font-weight: normal;
     } */
 
-    .nav-hover:hover:before, .active:before{
+    .nav-hover:hover:before, .menu .active:before{
         width:0%;
     }
     
