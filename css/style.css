@@ -11,6 +11,12 @@ html, body{
     /* overflow-x: hidden; */
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay {

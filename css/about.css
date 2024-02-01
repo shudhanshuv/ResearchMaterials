@@ -10,6 +10,12 @@ html, body{
     scroll-behavior: smooth;
     /* overflow-x: hidden; */
     cursor: pointer;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header{
