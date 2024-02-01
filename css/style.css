@@ -1027,9 +1027,9 @@ strong{
 
 
 @media (max-width:1060px){ /* big landscape tablets, laptops, and desktops */
-    .intro-section {
+    /* .intro-section {
         width: 70%;
-    }
+    } */
 
     .scrollAnim{
         height: 100%;
@@ -1137,9 +1137,9 @@ strong{
         padding-left: 4em;
     }
 
-    .intro-section .intro-content h1 {
+    /* .intro-section .intro-content h1 {
         font-size: 32px;
-    }
+    } */
 
     .animate-text span{
         font-size: 13px;
@@ -1212,10 +1212,11 @@ strong{
 @media (max-width:801px){ /* tablet, landscape iPad, lo-res laptops ands desktops */
     .intro-section {
         width: 80%;
+        padding-left: 4em;
     }
 
     .intro-section .intro-content h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .animate-text span{
@@ -1276,7 +1277,7 @@ strong{
     }
 
     .intro-section .intro-content h1 {
-        padding: 0 2em;
+        padding: 0 1.8em;
     }
 
     .animate-text{
@@ -1347,8 +1348,8 @@ strong{
     } */
 
     .intro-section .intro-content h1 {
-        font-size: 26px;
-        padding: 0 1.5em;
+        font-size: 30px;
+        padding: 0 1.2em;
     }
 
     .animate-text span{
@@ -1417,11 +1418,12 @@ strong{
     }  */
 
     .intro-section .intro-content h1 {
-        font-size: 24px;
+        font-size: 27px;
     }
 
     .animate-text span{
         font-size: 10px;
+        padding: 0 2em;
     }
  
     .content h1{
