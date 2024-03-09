@@ -498,7 +498,7 @@ nav ul li a {
     height: 12px;
     width: 12px;
     background-size: cover;
-    background-image: url('./assets/angle-right-icon.svg');
+    background-image: url('../assets/angle-right-icon.svg');
     background-repeat: no-repeat;
     margin-right: 10px;
     background-position: center center;
