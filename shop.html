@@ -69,184 +69,170 @@
 
     <!-- body -->
     <div class="main-body" id="section-1">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+
         <div class="scrollAnim" >
             <div class="anim-left content">
                 <h1><span>One-stop shop for all your research needs</span></h1>
                 <p>Elevate the quality of your research with our top-quality chemicals, lab equipment, and other research materials.
                 </p>
 
+                <h2 class="shop-items-heading">Explore by Categories: Tap for Showcase!</h2>
+            </div> 
+        </div>
+        
+        <div class="scrollAnim" id="shop-container">    
+            <div class="anim-left content">
                 <div class="shop-items">
-                    <h2 class="shop-items-heading">Explore by Categories: Tap for Popup Showcase!</h2>
-                    <div class="shop-items-title">
+                    <div class="item-list">
                         <ul>
-                            <li>
-                                <button data-modal-target="modal1"><span><i class="fa-solid fa-wrench" style="color: #ff5252;"></i></span>Materials <span class="materials-sub">(Metals and Non-metals)</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button data-modal-target="modal2"><span><i class="fa-solid fa-flask" style="color: #ff5252;"></i></i></span>Chemicals
-                                </button>
-                            </li>
-                            <li>
-                                <button data-modal-target="modal3"><span><i class="fa-solid fa-flask-vial" style="color: #ff5252;"></i></span>Lab Equipment
-                                </button>
-                            </li>
-                            <li>
-                                <button data-modal-target="modal4"><span><i class="fa-solid fa-oil-well" style="color: #ff5252;"></i></span>Machines
-                                </button>
-                            </li>
-                            <li>
-                                <button data-modal-target="modal5"><span><i class="fa-solid fa-circle-radiation" style="color: #ff5252;"></i></span>Miscellaneous
-                                </button>
-                            </li>
+                          <li class="current menu0"><img src="./assets/metal.png"><br>Metals</li>
+                          <li class="menu1"><img src="./assets/alloy.png"><br>Alloys</li>
+                          <li class="menu2"><img src="./assets/ceramic.png"><br>Ceramic</li>
+                          <li class="menu3"><img src="./assets/polymer.png"><br>Polymer</li>
+                          <li class="menu4"><img src="./assets/chemical.png"><br>Chemicals</li>
+                          <li class="menu5"><img src="./assets/lab-equipment.png"><br>Lab Equipment</li>
                         </ul>
                     </div>
-                    <a href="./enquiry.html" class="cmn-btn">Get a quotation now</a>
-                </div>
-            </div>
-            
-            <div class="modal-box" id="modal1">
-                <div class="modal-box-content">
-                    <span class="available-stock"><h2>Available Stock</h2></span>
-                    <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
-                    <h1 id="materials">Materials(Metals and Non-metals)</h1>
 
-                    <div class="modal-box-content-body">
-                        <div class="shop-item-container">
-                            <div class="container-item">
-                                <h2 class="container-item-heading">
-                                    Magnesium
-                                </h2>
-                                <span class="icon-container"><i class="fas fa-chevron-right"></i></span>
-                            </div>
-                            <div class="container-item-subheading">
-                                <ul>
-                                    <li>
-                                        <span class="list-marker">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                        </span>Pure Mg Powder - AZ31B
-                                    </li>
+                    <div class="search">
+                        <label for="search-text">Search from <span class="list-count"></span></label>
+                        <input type="text" id="search-text" placeholder="search" class="search-box">
+                        
+                        <!-- <span class="empty-item">no results</span> -->
+                    </div>
+                    
+                    <div id="slides">
+                        
+                        <div class="slide slide0">
+                            <div class="list">
+                                <ul class="two">
+                                    <li class="in">Aluminium</li>
+                                    <li class="in">Magnesium</li>
+                                    <li class="in">Copper</li>
+                                    <li class="in">Gold</li>
+                                    <li class="in">Iron</li>
+                                    <li class="in">Lithium</li>
+                                    <li class="in">Nickel</li>
+                                    <li class="in">Silicon</li>
+                                    <li class="in">Titanium</li>
+                                    <li class="in">Tungsten</li>
+                                    <li class="in">Zinc</li>
+                                    
                                 </ul>
                             </div>
-
-                            <div class="container-item">
-                                <h2 class="container-item-heading">
-                                    Aluminium
-                                </h2>
-                                <span class="icon-container"><i class="fas fa-chevron-right"></i></span>
-                            </div>
-                            <div class="container-item-subheading">
-                                <ul>
-                                    <li>
-                                        <span class="list-marker">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                        </span>Pure Al Powder - Al356 (C)
-                                    </li>
+                        </div>
+                        
+                        <div class="slide slide1">
+                            <div class="list">
+                                <ul class="two">
+                                    <li class="in">Aluminium Alloys</li>
+                                    <li class="in">Chromium Alloys</li>
+                                    <li class="in">Cooper Alloys</li>
+                                    <li class="in">Duplex Stainless Steel</li>
+                                    <li class="in">Super Duplex Stainless Steel</li>
+                                    <li class="in">Metal Matrix Composite</li>
+                                    <li class="in">Magnesium Alloys</li>
+                                    <li class="in">Gold Alloys</li>
+                                    <li class="in">Iron Alloys</li>
+                                    <li class="in">Lithium Alloys</li>
+                                    <li class="in">Nickel Alloys</li>
+                                    <li class="in">Silicon Alloys</li>
+                                    <li class="in">Titanium Alloys</li>
+                                    <li class="in">Tin Alloys</li>
+                                    <li class="in">Tungsten Alloys</li>
+                                    <li class="in">Zinc Alloys</li>
+                                    <li class="in">Zirconium Alloys</li>
                                 </ul>
                             </div>
-                            
-                            <div class="container-item">
-                                
-                                <h2 class="container-item-heading">
-                                    Steel
-                                </h2>
-                                <span class="icon-container"><i class="fas fa-chevron-right"></i></span>
-                            </div>
-                            <div class="container-item-subheading">
-                                <ul>
-                                    <li>
-                                        <span class="list-marker">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                        </span>Austanite steel
-                                    </li>
+                      
+                                       
+                        </div>
+                                   
+                        <div class="slide slide2">
+                            <div class="list">
+                                <ul class="two">
+                                    <li class="in">Alumina</li>
+                                    <li class="in">Carbides</li>
+                                    <li class="in">Nitrides</li>
+                                    <li class="in">Tin Alloys</li>
+                                    <li class="in">Tungsten Alloys</li>
+                                    <li class="in">Zinc Alloys</li>
+                                    <li class="in">Zirconium</li>
+                                    
                                 </ul>
                             </div>
-
-                            <div class="container-item">
-                                <h2 class="container-item-heading">
-                                    Copper
-                                </h2>
-                                <span class="icon-container"><i class="fas "></i></span>
+                        </div>
+                                   
+                        <div class="slide slide3">
+                            <div class="list">
+                                <ul class="two">
+                                    <li class="in">ABS Acrylonitrile Butadiene Styrene</li>
+                                    <li class="in">Composite</li>
+                                    <li class="in">Elastomer</li>
+                                    <li class="in">Flax</li>
+                                    <li class="in">PMMA</li>
+                                    <li class="in">PA-Polyamide</li>
+                                    <li class="in">PEEK-Plyether Ether Ketone</li>
+                                    <li class="in">PES-Polyether Sulfone</li>
+                                    <li class="in">PI-Polyimide</li>
+                                    <li class="in">PMP-Polymethyl Methacrylate</li>
+                                    <li class="in">PP-Polypropylene</li>
+                                    <li class="in">Thermoplastic</li>
+                                    <li class="in">Rubber</li>
+                                    <li class="in">Thermosets</li>
+                                </ul>
                             </div>
-                            <div class="container-item-subheading">
-                                
+                        </div>
+
+                        <div class="slide slide4">
+                            <div class="list">
+                                <ul class="two">
+                                    <li class="in">Distil Water</li>
+                                    <li class="in">Ethanol</li>
+                                    <li class="in">HCL</li>
+                                    <li class="in">Nitric Acid (HNO<sub>3</sub>)</li>
+                                    <li class="in">Sulphuric Acid (H<sub>2</sub>SO<sub>4</sub>)</li>
+                                    <li class="in">Acetic Acid (CH<sub>3</sub>COOH)</li>
+                                    <li class="in">Picric Acid</li>
+                                    <li class="in">Hydrofluoric Acid (HF)</li>
+                                    <li class="in">Argon Gas</li>
+                                    <li class="in">Nitrogen Gas</li>
+                                    <li class="in">Oxygen Gas</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="slide slide5">
+                            <div class="list">
+                                <ul class="two">
+                                    <li class="in">Lint Free Tissue</li>
+                                    <li class="in">Normal Tissue</li>
+                                    <li class="in">Nitrile Hand Gloves</li>
+                                    <li class="in">Cotton Gloves</li>
+                                    <li class="in">Burette</li>
+                                    <li class="in">Pipette</li>
+                                    <li class="in">Surgical Gloves</li>
+                                    <li class="in">Dropper</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <p class="note">(C):Cast (W):Wrought || Powder is available as per required Particle size
+                </div>
+
+                <a href="./enquiry.html" class="cmn-btn">Get a quotation now</a>
+
+                <div class="content">
+                    <h1><span>OR</span></h1>
+                    <p>Call Us at: +91 6383 002 023
                     </p>
-                  <a href="./enquiry.html" class="cmn-btn">Get a quotation now</a>
-                </div>
-            </div>
-
-            <div class="modal-box" id="modal2">
-                <div class="modal-box-content">
-                    <span class="available-stock"><h2>Available Stock</h2></span>
-                    <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
-                    <h1>Chemicals</h1>
-                    <div class="modal-box-content-body">
-                        <ul>
-                            <li>
-                                <span class="list-marker">
-                                    <i class="fa-regular fa-circle-dot"></i>
-                                </span>H2SO4
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="./enquiry.html" class="cmn-btn">Get a quotation now</a>
-                </div>
-            </div>
-
-            <div class="modal-box" id="modal3">
-                <div class="modal-box-content">
-                    <span class="available-stock"><h2>Available Stock</h2></span>
-                    <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
-                    <h1>Lab Equipment
-                    </h1>
-                    <div class="modal-box-content-body">
-                        <ul>
-                            <li>
-                                <span class="list-marker">
-                                    <i class="fa-regular fa-circle-dot"></i>
-                                </span>Beaker
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="./enquiry.html" class="cmn-btn">Get a quotation now</a>
-                </div>
-            </div>
-
-            <div class="modal-box" id="modal4">
-                <div class="modal-box-content">
-                    <span class="available-stock"><h2>Available Stock</h2></span>
-                    <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
-                    <h1>Machines</h1>
-                    <div class="modal-box-content-body">
-                        <ul>
-                            <li>
-                                will be available soon
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-box" id="modal5">
-                <div class="modal-box-content">
-                    <span class="available-stock"><h2>Available Stock</h2></span>
-                    <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
-                    <h1>Miscellaneous</h1>
-                    <div class="modal-box-content-body">
-                        <ul>
-                            <li>
-                                will be available soon
-                            </li>
-                        </ul>
-                    </div>
+                    <p>Email us at: <span id="emaill">researchmaterials23@gmail.com</span> 
+                    </p>
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer class="footer">
@@ -293,28 +279,28 @@
                 <div class="footer-call-to-action">
                     <h2 class="footer-menu-name">Let's Chat</h2>
                     <p class="footer-call-to-action-description">Have a support question?</p>
-                    <a class="cmn-btn" href="#" target="_self"> Enquiry</a>
+                    <a class="cmn-btn" href="./enquiry.html" target="_self"> Enquiry</a>
                 </div>
 
                 <div class="footer-call-to-action footer-social-icons">
                     <ul class="social-icons">
                         <li>
-                            <a href="" class="social-icon"> 
+                            <a href="#" class="social-icon"> 
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social-icon"> 
+                            <a href="#" class="social-icon"> 
                                 <i class="fa-brands fa-x-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social-icon"> 
+                            <a href="#" class="social-icon"> 
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social-icon"> 
+                            <a href="#" class="social-icon"> 
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -325,7 +311,7 @@
             <div class="footer-content-column">
                 <div class="footer-call-to-action">
                     <h2 class="footer-menu-name">Call Us</h2>
-                    <p class="footer-call-to-action-description">0124-64XXXX</p>
+                    <p class="footer-call-to-action-description">+91 6383 002 023</p>
                 </div>
                 
                 <div class="footer-call-to-action">

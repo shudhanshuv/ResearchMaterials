@@ -4,5 +4,6 @@
         "mechlergy",
         "scroller",
         "Tians"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
