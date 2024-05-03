@@ -1456,10 +1456,6 @@ strong{
   }
 
 @media (max-width:480px){ /* smartphones, Android phones, landscape iPhone */
-    .bts-popup-container {
-        max-width: 300px;
-    }
-
     .logo{
         /* padding-top: 2px; */
         padding-left: 25px;
