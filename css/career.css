@@ -417,8 +417,9 @@ nav ul li a {
 #wrapper {
     display: block;
     margin: 3em 0;
+    padding: 4em;
     background-color: var(--text-color);
-    height: 500px;
+    height: auto;
     position: relative;
     /* padding: 10px; */
     display: -webkit-box;
@@ -441,6 +442,108 @@ nav ul li a {
     padding: 1em 8em;
     font-weight: 600;
 }
+
+.job-container{
+    width: 100%;
+}
+
+.job-container-heading h2{
+    width: auto;
+	font-size: 20px;
+	color: #424242;
+	line-height: 2;
+    letter-spacing: 2px;
+	font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 2em 0;
+
+}
+
+.job-container-heading h2 span{
+    padding-bottom: 0.6em;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.job-container-box{
+	width: 100%;
+	border: 1px solid #d7e2e9;
+	display: flex;
+	border-radius: 4px;
+	padding: 1em 4em;
+	margin: 2em 0!important;
+	text-align: left;
+    font-family: "Poppins", sans-serif;
+	-webkit-border-radius: 0.4rem;
+	-moz-border-radius: 0.4rem;
+	border-radius: 0.4rem;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.job-container-box:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+	box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+    
+.job-container-box h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #424242;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+}   
+
+.job-container-box span{
+    font-weight: 300;
+    font-size: 14px;
+    color: #424242;
+}
+
+.function{
+    display: block;
+}
+    
+.job-profile{
+    width: 69%;
+    display: inline-block;
+    vertical-align: middle;  
+}
+
+.job-apply-btn{
+    width: 30%;
+    text-align:right;
+    margin-top: 1.1rem;
+}
+
+
+.btn-apply {
+   text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	font-weight: 800;
+	letter-spacing: 1px;
+	background-color: transparent;
+	color:  var(--primary-color);
+	border: 2px solid var(--primary-color);
+	padding: 0.6rem 2rem;
+	-webkit-border-radius: 2rem;
+	-moz-border-radius: 2rem;
+	border-radius: 2rem;
+    vertical-align: middle;
+}
+
+.btn-apply:hover {
+	background-color: var(--primary-color);
+	color:  var(--text-color);
+	border: 2px solid var(--primary-color);
+}
+
 
 .anim-left{
 	-webkit-transform: translate(-150px,0);
@@ -723,6 +826,10 @@ nav ul li a {
         /* padding: 0 80px; */
     }
 
+    #wrapper p{
+        padding: 1em 6em;
+    }
+
     .footer-logo-link img{
         width: 220px;
         padding-bottom: .2em;
@@ -813,10 +920,23 @@ nav ul li a {
         background-color: var(--primary-color) ; 
     }
 
+    #wrapper{
+        padding: 4em 2em;
+    }
+
     #wrapper p{
         padding: 1em 4em;
     }
-
+    
+    .job-container-box{
+        padding: 1em 2em;
+    }
+    
+    .btn-apply {
+        background-color: var(--primary-color);
+        color:  var(--text-color);
+    }
+    
     .footer{
         height: auto;
     }
@@ -866,8 +986,34 @@ nav ul li a {
 }
 
 @media (max-width:801px){ /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .scrollAnim{
+        padding: 25px 60px;
+    }
+
     #wrapper p{
         padding: 1em 2em;
+    }
+
+    .job-container-box{
+        display: block;
+    }
+        
+    .job-container-box h4{
+        font-size: 20px;
+    }   
+
+    .job-profile{
+        width: 100%;
+    }
+    
+    .job-apply-btn{
+        width: 100%;
+        text-align:left;
+        padding: 0.5em 0;
+    }
+    
+    .btn-apply {
+        padding: 0.8em 3em;
     }
 }
 
@@ -922,6 +1068,26 @@ nav ul li a {
     #wrapper p{
         padding: 1em;
     }
+
+    .job-container-heading h2{
+        font-size: 18px;
+    }
+
+    .job-container-box{
+        padding: 1em 1.2em;
+    }
+
+    .job-container-box h4{
+        font-size: 18px;
+    }   
+
+    .job-container-box span{
+        font-size: 12px;
+    }
+
+    .btn-apply {
+        padding: 0.6em 2em;
+    }
     
     .footer-content {
         padding: 3em;
@@ -953,8 +1119,21 @@ nav ul li a {
         width:180px; 
        
     }
+
+    #wrapper{
+        padding: 4em 1em;
+    }
+
     #wrapper h1{
         font-size: 22px;
+    }
+
+    .job-container-heading h2{
+        font-size: 16px;
+    }
+
+    .job-container-box span{
+        font-size: 11px;
     }
 
     .footer-logo-link img{
