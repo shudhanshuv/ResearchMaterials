@@ -1151,6 +1151,10 @@ strong{
     /* .intro-section {
         width: 70%;
     } */
+    
+    .bts-popup-container {
+        margin: 8em auto;
+    }
 
     .scrollAnim{
         height: 100%;
@@ -1454,7 +1458,6 @@ strong{
 @media (max-width:480px){ /* smartphones, Android phones, landscape iPhone */
     .bts-popup-container {
         max-width: 300px;
-        margin: 4em auto;
     }
 
     .logo{
