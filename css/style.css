@@ -181,6 +181,125 @@ body::-webkit-scrollbar {
 	}
 }
 
+
+
+/* 
+News feed 
+*/
+
+#ticker{
+    width:100%;
+    margin:auto;
+    z-index: 10;
+    outline: none;
+    background-color:var(--background-color);
+    height:35px;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    position:relative;
+    overflow:hidden;
+}
+
+#ticker ul{
+    width:100%;
+    display:block;
+    padding: 0;
+    line-height:30px;
+    margin: 0;
+    list-style:none;
+    white-space: nowrap;
+    animation: scroll 15s linear 0s infinite;
+    position: absolute;
+    -webkit-animation: scroll 15s linear 0s infinite;
+}
+
+#ticker ul li{
+    width: auto;
+    display: inline-block;
+    margin-right: 2em;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#ticker ul li a{
+    text-decoration: none;  
+}
+  
+#ticker ul:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+.news-point{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    color: red;
+}
+
+#ticker .title{
+    background-color:var(--primary-color);
+    color: var(--background-color);
+    position:absolute;
+    left:0;
+    font-weight:bold;
+    border-right:4px solid #FFF;
+    top:0;
+    font-family: 'Space Mono', monospace;
+    display:block;
+    height:35px;
+    vertical-align: middle;
+    /* letter-spacing: 1px; */
+    line-height:35px;
+    padding: 0 15px;
+    z-index:10;
+    -webkit-box-shadow:0px 0px 20px rgba(0,0,0,.8);
+            box-shadow:0px 0px 20px rgba(0,0,0,.8);
+}
+
+@-webkit-keyframes scroll {
+    from {
+        transform: translate(100%,0);
+        -webkit-transform: translate(100%,0);
+        -moz-transform: translate(100%,0);
+        -ms-transform: translate(100%,0);
+        -o-transform: translate(100%,0);
+    }
+  
+    to {
+         transform: translate(-50%,0);
+         -webkit-transform: translate(-50%,0);
+         -moz-transform: translate(-50%,0);
+         -ms-transform: translate(-50%,0);
+         -o-transform: translate(-50%,0);
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(100%,0);
+        -webkit-transform: translate(100%,0);
+        -moz-transform: translate(100%,0);
+        -ms-transform: translate(100%,0);
+        -o-transform: translate(100%,0);
+    }
+  
+    to {
+         transform: translate(-50%,0);
+         -webkit-transform: translate(-50%,0);
+         -moz-transform: translate(-50%,0);
+         -ms-transform: translate(-50%,0);
+         -o-transform: translate(-50%,0);
+    }
+}
+
+
+
+
+
+
 header{
     max-height: auto;
 }
@@ -1420,6 +1539,57 @@ strong{
     /* .cmn-btn {
         padding: 10px 40px;
     } */
+
+    
+    #ticker{height:35px;}
+
+    #ticker ul li{
+        font-size: 14px;
+        line-height: 35px;
+    }
+    
+    #ticker .title{
+        height:35px;
+        line-height:35px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    
+    @-webkit-keyframes scroll {
+        from {
+            transform: translate(100%,0);
+            -webkit-transform: translate(100%,0);
+            -moz-transform: translate(100%,0);
+            -ms-transform: translate(100%,0);
+            -o-transform: translate(100%,0);
+        }
+      
+        to {
+             transform: translate(-120%,0);
+             -webkit-transform: translate(-120%,0);
+             -moz-transform: translate(-120%,0);
+             -ms-transform: translate(-120%,0);
+             -o-transform: translate(-120%,0);
+}
+    }
+    
+    @keyframes scroll {
+        from {
+            transform: translate(100%,0);
+            -webkit-transform: translate(100%,0);
+            -moz-transform: translate(100%,0);
+            -ms-transform: translate(100%,0);
+            -o-transform: translate(100%,0);
+        }
+      
+        to {
+             transform: translate(-120%,0);
+             -webkit-transform: translate(-120%,0);
+             -moz-transform: translate(-120%,0);
+             -ms-transform: translate(-120%,0);
+             -o-transform: translate(-120%,0);
+}
+    }
 
     .scrollAnim{
         padding: 25px 40px;
