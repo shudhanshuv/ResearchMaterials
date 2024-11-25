@@ -344,7 +344,7 @@ nav ul li a {
 .content h1{
 	display: block;
 	color: var(--primary-color);
-	font-size: 32px;
+	font-size: 38px;
 	font-weight: bold;
     margin-bottom: 1em;
 	line-height: 1.2em;
@@ -353,7 +353,7 @@ nav ul li a {
 
 .content h1 span{
     padding-bottom: 6px;
-    border-bottom: 4px solid var(--primary-color);
+    /* border-bottom: 4px solid var(--primary-color); */
 }
 
 .content p{
@@ -366,7 +366,7 @@ nav ul li a {
 	font-family: "Poppins", sans-serif;
 }
 
-.scrollAnim img{
+#section-1 img{
     width:  40%;
     height: auto;
     margin: auto;
@@ -399,6 +399,87 @@ nav ul li a {
     text-decoration: none;
     border-bottom: 2px solid #dace27;
 }
+
+
+
+
+
+
+#section-3{
+    /* background: #1e1e2e; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  width: auto;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.profile-card {
+    max-width: 40rem;
+    min-height: 10rem;
+    /* border: 2px solid var(--primary-color); */
+    display: flex;
+    padding: 2em;
+    margin: 4em 0;
+    background: var(--text-color);
+    color: var(--background-color);
+    /*   padding: 0 1rem 1rem 1rem; */
+  }
+  
+  .profile-info {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-info  h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0.5em 0 0.2em 0;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .profile-info  p {
+    flex: 1;
+    text-align: center;
+    color: var(--background-color);
+  }
+  
+  .profile-info  span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* .profile-links {
+    text-align: center;
+  }
+  
+  .profile-links > a {
+    color: #9be895;
+  } */
+  
+  .profile-picture {
+    margin: auto;
+    padding-inline-start: 1rem;
+  }
+  
+  .profile-picture > img {
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+  }
+  
+
+
 
 .anim-left{
 	-webkit-transform: translate(-150px,0);
@@ -682,7 +763,7 @@ nav ul li a {
         flex-direction: column;
     }
 
-    .scrollAnim img{
+    #section-1 img{
         width:  50%;
         padding-bottom: 2em;
     }
@@ -831,9 +912,22 @@ nav ul li a {
         padding: 4em 0;
     }
 
-    .scrollAnim img{
+    #section-1 img{
         width:  65%;
     }
+
+    .profile-card {
+        flex-direction: column-reverse;
+        margin-inline: 1rem;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-info  h1 {
+        margin-top: 1em;
+      }
 }
 
 @media (max-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -842,15 +936,15 @@ nav ul li a {
         font-size: 40px;
     }
     
-    .content{
+    /* .content{
         padding: 4em 2em;
-    }
+    } */
     
     .scrollAnim{
         padding: 25px 40px;
     }
 
-    .scrollAnim img{
+    #section-1 img{
         width:  85%;
     }
 }
@@ -876,7 +970,7 @@ nav ul li a {
         padding: 2em 0;
     }
 
-    .scrollAnim img{
+    #section-1 img{
         width:  95%;
     }
 
@@ -921,7 +1015,7 @@ nav ul li a {
         font-size: 12px;
     }
 
-    .scrollAnim img{
+    #section-1 img{
         width:  100%;
     }
    
@@ -937,6 +1031,7 @@ nav ul li a {
 
 
 
+
 #stars {
     width: 1px;
     height: 1px;
@@ -947,7 +1042,7 @@ nav ul li a {
   #stars:after {
     content: " ";
     position: absolute;
-    top: 1500px;
+    top: 2000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -964,7 +1059,7 @@ nav ul li a {
   #stars2:after {
     content: " ";
     position: absolute;
-    top: 1500px;
+    top: 2000px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -981,7 +1076,7 @@ nav ul li a {
   #stars3:after {
     content: " ";
     position: absolute;
-    top: 1500px;
+    top: 2000px;
     width: 3px;
     height: 3px;
     background: transparent;
@@ -993,10 +1088,10 @@ nav ul li a {
       transform: translateY(0px);
     }
     to {
-      transform: translateY(-1500px);
-      -webkit-transform: translateY(-1500px);
-      -moz-transform: translateY(-1500px);
-      -ms-transform: translateY(-1500px);
-      -o-transform: translateY(-1500px);
+      transform: translateY(-2000px);
+      -webkit-transform: translateY(-2000px);
+      -moz-transform: translateY(-2000px);
+      -ms-transform: translateY(-2000px);
+      -o-transform: translateY(-2000px);
 }
   }

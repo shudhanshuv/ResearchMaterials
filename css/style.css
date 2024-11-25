@@ -1810,5 +1810,9 @@ strong{
     }
     to {
       transform: translateY(-2000px);
-    }
+      -webkit-transform: translateY(-2000px);
+      -moz-transform: translateY(-2000px);
+      -ms-transform: translateY(-2000px);
+      -o-transform: translateY(-2000px);
+}
   }
